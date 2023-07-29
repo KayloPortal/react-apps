@@ -1,0 +1,150 @@
+.about-section {
+  width: 100svw;
+}
+
+.about-section .container {
+  margin-top: 7.93rem;
+}
+
+.about__companies {
+  display: flex;
+  gap: 2.91rem;
+  margin-inline: auto;
+  width: min(max-content, 100% - var(--page-minimum-padding) * 2);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Content */
+
+.about__content {
+  filter: drop-shadow(0px .25rem .25rem rgba(0, 0, 0, 0.25));
+  padding: 3.87rem 3.81rem 3.94rem 3.81rem;
+}
+
+.flex-columns {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-section p {
+  line-height: 1.875;
+}
+
+/* Content-main (middle) */
+
+.about__content--main--header--h2 {
+  max-width: 22ch;
+  line-height: 1.32353;
+  font-weight: var(--fw-extrabold);
+}
+
+/* Content-main(middle) - intro */
+
+.about__content--intro p {
+  max-width: 72ch;
+}
+
+/* Content-main(middle) benefit */
+.about__content--main--benefits {
+  gap: 1.75rem;
+}
+
+.about__content--main--benefits--benefit p {
+  margin-top: 1rem;
+}
+
+.about-section .container {
+  overflow: hidden;
+}
+
+.about__content * {
+  z-index: 10;
+}
+
+.about-blur-top {
+  top: -17.56rem;
+  left: -23.19rem;
+  width: 36.3125rem;
+  height: 25.625rem;
+  border-radius: 36.3125rem;
+  background: #0F4279;
+  filter: blur(60px);
+}
+
+.about-blur-bottom {
+  width: 38.9375rem;
+height: 34.875rem;
+border-radius: 38.9375rem;
+background: #1B78DE;
+filter: blur(100px);
+right: -26.63rem;
+bottom: -20.06rem;
+}
+
+.about-blur-bottom {
+  width: 38.9375rem;
+  height: 34.875rem;
+  border-radius: 38.9375rem;
+  background: #1B78DE;
+  filter: blur(100px);
+}
+
+/* queries */
+
+@media(max-width: 1000px) {
+  .about-section {
+    text-align: center;
+  }
+
+  .about__content {
+    padding: 3.87rem 2rem;
+    max-width: 40rem;
+    margin-inline: auto;
+  }
+
+  .flex-columns {
+    flex-direction: column;
+  }
+
+  .about__content .line-gradient {
+    display: inline-block;
+    margin-inline: auto;
+  }
+
+  /* About-main */
+  .about__content--main--header {
+    margin-top: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about__content--main--benefits--benefit p {
+    max-width: 40ch;
+    margin-inline: auto;
+    display: inline-block;
+  }
+}
+
+@media(width > 1000px) {
+  .about__content--main {
+    display: block;
+  }
+
+  .about__content--main--header {
+    margin-top: 5.61rem;
+    margin-bottom: 6.06rem;
+  }
+
+  .about__content--main--header {
+    justify-content: space-between;
+  }
+
+  .about__content--main--benefits {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .about__content--intro {
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,9 @@
+export { default as About } from "./About/About";
+export { default as Benefits } from "./Benefits/Benefits";
+export { default as Blogs } from "./Blogs/Blogs";
+export { default as Cta } from "./Cta/Cta";
+export { default as Hero } from "./Hero/Hero";
+export { default as Leading } from "./Leading/Leading";
+export { default as Nav } from "./Nav/Nav";
+export { default as FooterCta } from "./FooterCta/FooterCta";
+export { default as Footer } from "./Footer/Footer";

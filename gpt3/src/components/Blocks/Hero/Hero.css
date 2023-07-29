@@ -1,0 +1,132 @@
+.hero-section {
+  width: 100svw;
+  --new-pad: 1.5rem;
+  /* --page-inline-padding-right: var(--new-pad);
+  width: min(100%, var(--page-max-width) - calc(var(--page-inline-padding) - var(--new-pad)) * 2); */
+  margin-inline: auto;
+  padding-bottom: 7.44rem;
+  overflow-x: hidden;
+}
+
+.hero__form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4rem 4rem;
+}
+
+.hero__form--input,
+.hero-form--button {
+  border-radius: .3125rem;
+}
+
+.hero__form--input {
+  padding: 0 2rem;
+}
+
+.hero__form--input::placeholder {
+  color: var(--clr-text-100);
+}
+
+.hero__form--button {
+  background-color: var(--clr-text-500);
+  color: var(--clr-heading-100);
+  /* font-weight: var(--fw-bold); */
+  font-family: Manrope;
+  line-height: normal;
+}
+
+/* Content */
+
+.hero__content h1 {
+  font-size: var(--fs-800);
+  /* font-weight: 800; */
+  line-height: 1.20968;
+  letter-spacing: -0.155rem;
+}
+
+.hero__image {
+  display: grid;
+  place-items: center;
+}
+
+.hero__image--image {
+  width: 100%;
+}
+
+.hero__content>p {
+  margin-top: 2.06rem;
+  margin-bottom: 2.62rem;
+  max-width: 45ch;
+}
+
+.hero__content--feeds {
+  margin-top: 2.38rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .85rem;
+}
+
+
+@media(width > 1000px) {
+  .hero-section .grid-columns {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero__image--image {
+    width: clamp(100%, 125%, 41.71313rem);
+  }
+
+  .hero__content {
+    padding-top: 7.5rem;
+  }
+
+  .hero__form {
+    grid-template-columns: 28.5rem 10.875rem;
+    grid-template-rows: 4.5625rem;
+  }
+
+  .hero-form--input {
+    width: 28.5rem;
+  }
+
+  .hero__content--feeds {
+    flex-direction: row;
+  }
+
+  .hero__form button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .hero__form--input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+@media(max-width : 1000px) {
+
+  .hero__content>p,
+  h1,
+  .hero__content--feeds {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  .hero-section .grid-columns {
+    padding-top: 2.5rem;
+    grid-template-columns: 1fr;
+  }
+
+  .hero__image {
+    grid-row: 1;
+  }
+
+  .hero__image,
+  .hero__image--image,
+  .hero__form {
+    max-width: 32.5rem;
+    margin-inline: auto;
+  }
+}

@@ -1,0 +1,29 @@
+.hero-countainer {
+  position: relative;
+}
+
+.blur {
+  position: absolute;
+  z-index: 0;
+  flex-shrink: 0;
+}
+
+.hero-blur-top {
+  width: 63.3125rem;
+  height: 63.3125rem;
+  border-radius: 63.3125rem;
+  background: #002853;
+  filter: blur(282px);
+  top: -19.6rem;
+  left: -20rem;
+}
+
+.hero-blur-bottom {
+  width: 43.8125rem;
+  height: 31rem;
+  border-radius: 43.8125rem;
+  background-color: #072D56;
+  filter: blur(282px);
+  top: 31.25rem;
+  right: -24.25rem;
+}
